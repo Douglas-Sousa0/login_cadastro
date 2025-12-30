@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Login e Cadastro</title>
+</head>
+<body>
+
+    <!-- LOGIN -->
+    <h1>Login</h1>
+
+    <form onsubmit="return realizar_login(event)">
+        <input type="text" placeholder="Usuário" name="usuario_login" id="usuario_login" required>
+        <input type="password" placeholder="Senha" name="senha_login" id="senha_login" required>
+
+        <input type="submit" value="Entrar" id="submit_login">
+    </form>
+
+    <span id="status_login"></span>
+
+    <!-- CADASTRO -->
+    <h2>Cadastrar</h2>
+
+    <form onsubmit="return cadastrar_conta(event)">
+        <input type="text" placeholder="Usuário" name="usuario_cadastro" id="usuario_cadastro" required>
+        <input type="password" placeholder="Senha" name="senha_cadastro" id="senha_cadastro" required>
+        <input type="password" placeholder="Confirme a senha" name="confirmar_senha" id="confirmar_senha" required>
+
+        <input type="submit" value="Cadastrar" id="submit_cadastro">
+    </form>
+
+    <span id="status_cadastro"></span>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
